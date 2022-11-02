@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1</title>
+<script>
+    function myFunction(){
+        var myStr = 'Makruf Alkarkhi_119140075_RA';
+        var newStr = myStr.replace(/_/g, "-");
+
+        document.getElementById("myText").innerHTML = newStr;
+    }
+</script>
+<style>
+    p{
+        font-size: large;
+    }
+    button{
+        border-radius: 5px;
+        background-color: greenyellow;
+        font-size: large;
+    }
+</style>
+</head>
+<body>
+    <h2>Membuat teks ke dalam id/class html tertentu</h2>
+    <p id="myText">Makruf Alkarkhi_119140075_RA</p>
+    <button type="button" onclick="myFunction();">Replace</button>
+</body>
+</html>
